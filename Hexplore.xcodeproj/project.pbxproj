@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616D0A0C24BDA0A30000DBA3 /* testSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5D324BD95AB00FC1370 /* testSim.cpp */; };
+		616D0A0E24BDA0A80000DBA3 /* Simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7842452D89800457095 /* Simulation.cpp */; };
+		616D0A0F24BDA0AE0000DBA3 /* Odometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5D624BD969900FC1370 /* Odometry.cpp */; };
+		616D0A1024BDA0BE0000DBA3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F79B2452EFE500457095 /* CoreVideo.framework */; };
+		616D0A1124BDA0C30000DBA3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F79D2452EFEF00457095 /* IOKit.framework */; };
+		616D0A1224BDA0C80000DBA3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7952452EEE600457095 /* OpenGL.framework */; };
+		616D0A1324BDA0D60000DBA3 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7972452EFC400457095 /* libglfw3.a */; };
+		616D0A1624BDA2020000DBA3 /* SimulationRobot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616D0A1424BDA2020000DBA3 /* SimulationRobot.cpp */; };
+		616D0A1724BDA30E0000DBA3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7992452EFD200457095 /* Cocoa.framework */; };
+		616D0A1A24BDA32D0000DBA3 /* libGrapher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7822452D87300457095 /* libGrapher.a */; };
+		616D0A1C24BDA4A40000DBA3 /* Integrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616D0A1B24BDA4A40000DBA3 /* Integrator.cpp */; };
+		616D0A1D24BDC6630000DBA3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5E024BD9DF800FC1370 /* main.cpp */; };
+		616EB5D824BD969900FC1370 /* Odometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5D624BD969900FC1370 /* Odometry.cpp */; };
+		616EB5E624BD9E0E00FC1370 /* Robot_VREP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5E524BD9E0E00FC1370 /* Robot_VREP.cpp */; };
+		616EB5E824BD9E1200FC1370 /* Robot_VREP.h in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5E724BD9E1200FC1370 /* Robot_VREP.h */; };
+		616EB5EA24BD9E1600FC1370 /* Robot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5E924BD9E1600FC1370 /* Robot.cpp */; };
+		616EB5EC24BD9E1A00FC1370 /* Robot.h in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5EB24BD9E1A00FC1370 /* Robot.h */; };
+		616EB5ED24BD9E1E00FC1370 /* walk_tripod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F78B2452DD8700457095 /* walk_tripod.cpp */; };
+		616EB5EE24BD9E2100FC1370 /* walk_tripod.h in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F78C2452DD8700457095 /* walk_tripod.h */; };
+		61E0F75A2452D2F100457095 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7592452D2F100457095 /* main.cpp */; };
+		61E0F77C2452D7A100457095 /* CPG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F76F2452D7A000457095 /* CPG.cpp */; };
+		61E0F77D2452D7A100457095 /* PIDController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7752452D7A100457095 /* PIDController.cpp */; };
+		61E0F77E2452D7A100457095 /* extApiPlatform.c in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7772452D7A100457095 /* extApiPlatform.c */; };
+		61E0F77F2452D7A100457095 /* extApi.c in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F77A2452D7A100457095 /* extApi.c */; };
+		61E0F7802452D7A100457095 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F77B2452D7A100457095 /* common.cpp */; };
+		61E0F7832452D87300457095 /* libGrapher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7822452D87300457095 /* libGrapher.a */; };
+		61E0F7862452D89800457095 /* Simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7842452D89800457095 /* Simulation.cpp */; };
+		61E0F7902452EE7900457095 /* Integrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F78F2452EE7900457095 /* Integrator.cpp */; };
+		61E0F7962452EEE600457095 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7952452EEE600457095 /* OpenGL.framework */; };
+		61E0F7982452EFC400457095 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7972452EFC400457095 /* libglfw3.a */; };
+		61E0F79A2452EFD200457095 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7992452EFD200457095 /* Cocoa.framework */; };
+		61E0F79C2452EFE500457095 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F79B2452EFE500457095 /* CoreVideo.framework */; };
+		61E0F79E2452EFEF00457095 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F79D2452EFEF00457095 /* IOKit.framework */; };
+		61E0F7B224645FBF00457095 /* OrientationController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7B024645FBE00457095 /* OrientationController.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		616D0A0324BDA03F0000DBA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		61E0F7542452D2F100457095 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		616D0A0524BDA03F0000DBA3 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		616D0A1424BDA2020000DBA3 /* SimulationRobot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationRobot.cpp; sourceTree = "<group>"; };
+		616D0A1524BDA2020000DBA3 /* SimulationRobot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationRobot.h; sourceTree = "<group>"; };
+		616D0A1824BDA31A0000DBA3 /* Code */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Code; path = ..; sourceTree = "<group>"; };
+		616D0A1B24BDA4A40000DBA3 /* Integrator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Integrator.cpp; path = "lib-cpg/Integrator.cpp"; sourceTree = "<group>"; };
+		616EB5D324BD95AB00FC1370 /* testSim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = testSim.cpp; path = Test/testSim.cpp; sourceTree = SOURCE_ROOT; };
+		616EB5D424BD95AB00FC1370 /* testSim.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = testSim.h; path = Test/testSim.h; sourceTree = SOURCE_ROOT; };
+		616EB5D624BD969900FC1370 /* Odometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Odometry.cpp; path = Simulation/Odometry.cpp; sourceTree = SOURCE_ROOT; };
+		616EB5D724BD969900FC1370 /* Odometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Odometry.h; path = Simulation/Odometry.h; sourceTree = SOURCE_ROOT; };
+		616EB5E024BD9DF800FC1370 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		616EB5E524BD9E0E00FC1370 /* Robot_VREP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Robot_VREP.cpp; path = Robot/Robot_VREP.cpp; sourceTree = "<group>"; };
+		616EB5E724BD9E1200FC1370 /* Robot_VREP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Robot_VREP.h; path = Robot/Robot_VREP.h; sourceTree = "<group>"; };
+		616EB5E924BD9E1600FC1370 /* Robot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Robot.cpp; path = Robot/Robot.cpp; sourceTree = "<group>"; };
+		616EB5EB24BD9E1A00FC1370 /* Robot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Robot.h; path = Robot/Robot.h; sourceTree = "<group>"; };
+		61E0F7562452D2F100457095 /* Hexplore */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hexplore; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E0F7592452D2F100457095 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		61E0F76E2452D7A000457095 /* extApiPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extApiPlatform.h; sourceTree = "<group>"; };
+		61E0F76F2452D7A000457095 /* CPG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPG.cpp; sourceTree = "<group>"; };
+		61E0F7702452D7A000457095 /* PIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIDController.h; sourceTree = "<group>"; };
+		61E0F7712452D7A000457095 /* CPG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPG.h; sourceTree = "<group>"; };
+		61E0F7722452D7A000457095 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		61E0F7732452D7A000457095 /* extApiInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extApiInternal.h; sourceTree = "<group>"; };
+		61E0F7742452D7A100457095 /* extApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extApi.h; sourceTree = "<group>"; };
+		61E0F7752452D7A100457095 /* PIDController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PIDController.cpp; sourceTree = "<group>"; };
+		61E0F7762452D7A100457095 /* Robot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Robot; sourceTree = "<group>"; };
+		61E0F7772452D7A100457095 /* extApiPlatform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extApiPlatform.c; sourceTree = "<group>"; };
+		61E0F7782452D7A100457095 /* v_repConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v_repConst.h; sourceTree = "<group>"; };
+		61E0F7792452D7A100457095 /* Simulation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Simulation; sourceTree = "<group>"; };
+		61E0F77A2452D7A100457095 /* extApi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extApi.c; sourceTree = "<group>"; };
+		61E0F77B2452D7A100457095 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		61E0F7822452D87300457095 /* libGrapher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGrapher.a; path = ../Grapher/build/libGrapher.a; sourceTree = "<group>"; };
+		61E0F7842452D89800457095 /* Simulation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Simulation.cpp; path = Simulation/Simulation.cpp; sourceTree = SOURCE_ROOT; };
+		61E0F7872452D9CD00457095 /* Simulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Simulation.h; path = Simulation/Simulation.h; sourceTree = SOURCE_ROOT; };
+		61E0F7882452DD6800457095 /* walk_cpg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = walk_cpg.cpp; path = Simulation/walk_cpg.cpp; sourceTree = SOURCE_ROOT; };
+		61E0F7892452DD6800457095 /* walk_cpg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = walk_cpg.h; path = Simulation/walk_cpg.h; sourceTree = SOURCE_ROOT; };
+		61E0F78B2452DD8700457095 /* walk_tripod.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = walk_tripod.cpp; path = Simulation/walk_tripod.cpp; sourceTree = SOURCE_ROOT; };
+		61E0F78C2452DD8700457095 /* walk_tripod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = walk_tripod.h; path = Simulation/walk_tripod.h; sourceTree = SOURCE_ROOT; };
+		61E0F78E2452EE6600457095 /* lib-cpg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "lib-cpg"; sourceTree = "<group>"; };
+		61E0F78F2452EE7900457095 /* Integrator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Integrator.cpp; path = "lib-cpg/Integrator.cpp"; sourceTree = "<group>"; };
+		61E0F7912452EEA800457095 /* Robot_VREP.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Robot_VREP.cpp; path = Robot/Robot_VREP.cpp; sourceTree = "<group>"; };
+		61E0F7932452EEAB00457095 /* Robot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Robot.cpp; path = Robot/Robot.cpp; sourceTree = "<group>"; };
+		61E0F7952452EEE600457095 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		61E0F7972452EFC400457095 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
+		61E0F7992452EFD200457095 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		61E0F79B2452EFE500457095 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		61E0F79D2452EFEF00457095 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		61E0F7B024645FBE00457095 /* OrientationController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OrientationController.cpp; path = Simulation/OrientationController.cpp; sourceTree = SOURCE_ROOT; };
+		61E0F7B124645FBE00457095 /* OrientationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OrientationController.h; path = Simulation/OrientationController.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		616D0A0224BDA03F0000DBA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D0A1A24BDA32D0000DBA3 /* libGrapher.a in Frameworks */,
+				616D0A1724BDA30E0000DBA3 /* Cocoa.framework in Frameworks */,
+				616D0A1324BDA0D60000DBA3 /* libglfw3.a in Frameworks */,
+				616D0A1224BDA0C80000DBA3 /* OpenGL.framework in Frameworks */,
+				616D0A1124BDA0C30000DBA3 /* IOKit.framework in Frameworks */,
+				616D0A1024BDA0BE0000DBA3 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E0F7532452D2F100457095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E0F79E2452EFEF00457095 /* IOKit.framework in Frameworks */,
+				61E0F79C2452EFE500457095 /* CoreVideo.framework in Frameworks */,
+				61E0F79A2452EFD200457095 /* Cocoa.framework in Frameworks */,
+				61E0F7982452EFC400457095 /* libglfw3.a in Frameworks */,
+				61E0F7962452EEE600457095 /* OpenGL.framework in Frameworks */,
+				61E0F7832452D87300457095 /* libGrapher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616EB5DF24BD9DF800FC1370 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				616EB5D324BD95AB00FC1370 /* testSim.cpp */,
+				616EB5D424BD95AB00FC1370 /* testSim.h */,
+				616EB5E024BD9DF800FC1370 /* main.cpp */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		61E0F74D2452D2F100457095 = {
+			isa = PBXGroup;
+			children = (
+				616D0A1B24BDA4A40000DBA3 /* Integrator.cpp */,
+				616EB5EB24BD9E1A00FC1370 /* Robot.h */,
+				616EB5E924BD9E1600FC1370 /* Robot.cpp */,
+				616EB5E724BD9E1200FC1370 /* Robot_VREP.h */,
+				616EB5E524BD9E0E00FC1370 /* Robot_VREP.cpp */,
+				61E0F7932452EEAB00457095 /* Robot.cpp */,
+				61E0F7912452EEA800457095 /* Robot_VREP.cpp */,
+				61E0F78F2452EE7900457095 /* Integrator.cpp */,
+				61E0F78E2452EE6600457095 /* lib-cpg */,
+				61E0F77B2452D7A100457095 /* common.cpp */,
+				61E0F7722452D7A000457095 /* common.h */,
+				61E0F76F2452D7A000457095 /* CPG.cpp */,
+				61E0F7712452D7A000457095 /* CPG.h */,
+				61E0F77A2452D7A100457095 /* extApi.c */,
+				61E0F7742452D7A100457095 /* extApi.h */,
+				61E0F7732452D7A000457095 /* extApiInternal.h */,
+				61E0F7772452D7A100457095 /* extApiPlatform.c */,
+				61E0F76E2452D7A000457095 /* extApiPlatform.h */,
+				61E0F7752452D7A100457095 /* PIDController.cpp */,
+				61E0F7702452D7A000457095 /* PIDController.h */,
+				61E0F7762452D7A100457095 /* Robot */,
+				61E0F7792452D7A100457095 /* Simulation */,
+				61E0F7782452D7A100457095 /* v_repConst.h */,
+				61E0F7582452D2F100457095 /* Hexplore */,
+				616EB5DF24BD9DF800FC1370 /* Test */,
+				61E0F7572452D2F100457095 /* Products */,
+				61E0F7812452D87300457095 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		61E0F7572452D2F100457095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E0F7562452D2F100457095 /* Hexplore */,
+				616D0A0524BDA03F0000DBA3 /* Test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61E0F7582452D2F100457095 /* Hexplore */ = {
+			isa = PBXGroup;
+			children = (
+				61E0F7592452D2F100457095 /* main.cpp */,
+				61E0F7B024645FBE00457095 /* OrientationController.cpp */,
+				61E0F7B124645FBE00457095 /* OrientationController.h */,
+				61E0F7842452D89800457095 /* Simulation.cpp */,
+				61E0F7872452D9CD00457095 /* Simulation.h */,
+				616D0A1424BDA2020000DBA3 /* SimulationRobot.cpp */,
+				616D0A1524BDA2020000DBA3 /* SimulationRobot.h */,
+				61E0F7882452DD6800457095 /* walk_cpg.cpp */,
+				61E0F7892452DD6800457095 /* walk_cpg.h */,
+				61E0F78B2452DD8700457095 /* walk_tripod.cpp */,
+				61E0F78C2452DD8700457095 /* walk_tripod.h */,
+				616EB5D624BD969900FC1370 /* Odometry.cpp */,
+				616EB5D724BD969900FC1370 /* Odometry.h */,
+			);
+			path = Hexplore;
+			sourceTree = "<group>";
+		};
+		61E0F7812452D87300457095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				616D0A1824BDA31A0000DBA3 /* Code */,
+				61E0F79D2452EFEF00457095 /* IOKit.framework */,
+				61E0F79B2452EFE500457095 /* CoreVideo.framework */,
+				61E0F7992452EFD200457095 /* Cocoa.framework */,
+				61E0F7972452EFC400457095 /* libglfw3.a */,
+				61E0F7952452EEE600457095 /* OpenGL.framework */,
+				61E0F7822452D87300457095 /* libGrapher.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		616D0A0424BDA03F0000DBA3 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616D0A0924BDA03F0000DBA3 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				616D0A0124BDA03F0000DBA3 /* Sources */,
+				616D0A0224BDA03F0000DBA3 /* Frameworks */,
+				616D0A0324BDA03F0000DBA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 616D0A0524BDA03F0000DBA3 /* Test */;
+			productType = "com.apple.product-type.tool";
+		};
+		61E0F7552452D2F100457095 /* Hexplore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E0F75D2452D2F100457095 /* Build configuration list for PBXNativeTarget "Hexplore" */;
+			buildPhases = (
+				61E0F7522452D2F100457095 /* Sources */,
+				61E0F7532452D2F100457095 /* Frameworks */,
+				61E0F7542452D2F100457095 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hexplore;
+			productName = Hexplore;
+			productReference = 61E0F7562452D2F100457095 /* Hexplore */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61E0F74E2452D2F100457095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Melanie Jouaiti";
+				TargetAttributes = {
+					616D0A0424BDA03F0000DBA3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					61E0F7552452D2F100457095 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 61E0F7512452D2F100457095 /* Build configuration list for PBXProject "Hexplore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61E0F74D2452D2F100457095;
+			productRefGroup = 61E0F7572452D2F100457095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61E0F7552452D2F100457095 /* Hexplore */,
+				616D0A0424BDA03F0000DBA3 /* Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		616D0A0124BDA03F0000DBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D0A1D24BDC6630000DBA3 /* main.cpp in Sources */,
+				616D0A0C24BDA0A30000DBA3 /* testSim.cpp in Sources */,
+				616D0A0E24BDA0A80000DBA3 /* Simulation.cpp in Sources */,
+				616D0A0F24BDA0AE0000DBA3 /* Odometry.cpp in Sources */,
+				616D0A1C24BDA4A40000DBA3 /* Integrator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E0F7522452D2F100457095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616EB5D824BD969900FC1370 /* Odometry.cpp in Sources */,
+				61E0F7902452EE7900457095 /* Integrator.cpp in Sources */,
+				61E0F77C2452D7A100457095 /* CPG.cpp in Sources */,
+				61E0F7862452D89800457095 /* Simulation.cpp in Sources */,
+				616EB5E624BD9E0E00FC1370 /* Robot_VREP.cpp in Sources */,
+				61E0F7B224645FBF00457095 /* OrientationController.cpp in Sources */,
+				61E0F77E2452D7A100457095 /* extApiPlatform.c in Sources */,
+				616EB5E824BD9E1200FC1370 /* Robot_VREP.h in Sources */,
+				616EB5EC24BD9E1A00FC1370 /* Robot.h in Sources */,
+				61E0F77F2452D7A100457095 /* extApi.c in Sources */,
+				616EB5EA24BD9E1600FC1370 /* Robot.cpp in Sources */,
+				61E0F77D2452D7A100457095 /* PIDController.cpp in Sources */,
+				61E0F7802452D7A100457095 /* common.cpp in Sources */,
+				616EB5EE24BD9E2100FC1370 /* walk_tripod.h in Sources */,
+				616EB5ED24BD9E1E00FC1370 /* walk_tripod.cpp in Sources */,
+				616D0A1624BDA2020000DBA3 /* SimulationRobot.cpp in Sources */,
+				61E0F75A2452D2F100457095 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		616D0A0A24BDA03F0000DBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/src,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/build,
+					/usr/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		616D0A0B24BDA03F0000DBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/src,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/build,
+					/usr/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61E0F75B2452D2F100457095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		61E0F75C2452D2F100457095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		61E0F75E2452D2F100457095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"MAX_EXT_API_CONNECTIONS=255",
+					DO_NOT_USE_SHARED_MEMORY,
+					"NON_MATLAB_PARSING=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/src,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Hexplore,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/lib,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/build,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61E0F75F2452D2F100457095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/src,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Hexplore,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/lib,
+					/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/build,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616D0A0924BDA03F0000DBA3 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616D0A0A24BDA03F0000DBA3 /* Debug */,
+				616D0A0B24BDA03F0000DBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E0F7512452D2F100457095 /* Build configuration list for PBXProject "Hexplore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E0F75B2452D2F100457095 /* Debug */,
+				61E0F75C2452D2F100457095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E0F75D2452D2F100457095 /* Build configuration list for PBXNativeTarget "Hexplore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E0F75E2452D2F100457095 /* Debug */,
+				61E0F75F2452D2F100457095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61E0F74E2452D2F100457095 /* Project object */;
+}
