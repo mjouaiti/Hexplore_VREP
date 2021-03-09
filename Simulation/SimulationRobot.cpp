@@ -8,7 +8,7 @@
 
 #include "SimulationRobot.h"
 
-#include "common.h"
+#include "../common.h"
 #include "../Robot/Robot_VREP.h"
 
 SimulationRobot::SimulationRobot(): m_robot(), m_t(0),

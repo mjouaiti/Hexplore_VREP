@@ -7,7 +7,7 @@
 //
 
 #include "Simulation.h"
-#include "common.h"
+#include "../common.h"
 
 Simulation::Simulation()
 {

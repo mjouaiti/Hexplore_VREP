@@ -13,8 +13,8 @@
 #include <vector>
 #include <string>
 #include "Simulation.h"
-#include "PIDController.h"
-#include "CPG.h"
+#include "../PIDController.h"
+#include "../CPG.h"
 #include "../Robot/Robot.h"
 #include "Odometry.h"
 

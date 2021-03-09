@@ -13,7 +13,7 @@
 #include <iostream>
 #include <queue>
 
-#include "common.h"
+#include "../common.h"
 #include "SimulationRobot.h"
 #include "OrientationController.h"
 

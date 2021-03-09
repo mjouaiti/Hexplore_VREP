@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6136AB0725F10B840095467E /* SimulationRobot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6136AB0625F10B840095467E /* SimulationRobot.cpp */; };
 		616D0A0C24BDA0A30000DBA3 /* testSim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5D324BD95AB00FC1370 /* testSim.cpp */; };
 		616D0A0E24BDA0A80000DBA3 /* Simulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E0F7842452D89800457095 /* Simulation.cpp */; };
 		616D0A0F24BDA0AE0000DBA3 /* Odometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616EB5D624BD969900FC1370 /* Odometry.cpp */; };
@@ -14,7 +15,6 @@
 		616D0A1124BDA0C30000DBA3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F79D2452EFEF00457095 /* IOKit.framework */; };
 		616D0A1224BDA0C80000DBA3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7952452EEE600457095 /* OpenGL.framework */; };
 		616D0A1324BDA0D60000DBA3 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7972452EFC400457095 /* libglfw3.a */; };
-		616D0A1624BDA2020000DBA3 /* SimulationRobot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616D0A1424BDA2020000DBA3 /* SimulationRobot.cpp */; };
 		616D0A1724BDA30E0000DBA3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7992452EFD200457095 /* Cocoa.framework */; };
 		616D0A1A24BDA32D0000DBA3 /* libGrapher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0F7822452D87300457095 /* libGrapher.a */; };
 		616D0A1C24BDA4A40000DBA3 /* Integrator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616D0A1B24BDA4A40000DBA3 /* Integrator.cpp */; };
@@ -65,9 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6136AB0625F10B840095467E /* SimulationRobot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SimulationRobot.cpp; path = Simulation/SimulationRobot.cpp; sourceTree = "<group>"; };
 		616D0A0524BDA03F0000DBA3 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
-		616D0A1424BDA2020000DBA3 /* SimulationRobot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimulationRobot.cpp; sourceTree = "<group>"; };
-		616D0A1524BDA2020000DBA3 /* SimulationRobot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimulationRobot.h; sourceTree = "<group>"; };
 		616D0A1824BDA31A0000DBA3 /* Code */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Code; path = ..; sourceTree = "<group>"; };
 		616D0A1B24BDA4A40000DBA3 /* Integrator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Integrator.cpp; path = "lib-cpg/Integrator.cpp"; sourceTree = "<group>"; };
 		616EB5D324BD95AB00FC1370 /* testSim.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = testSim.cpp; path = Test/testSim.cpp; sourceTree = SOURCE_ROOT; };
@@ -158,6 +157,7 @@
 		61E0F74D2452D2F100457095 = {
 			isa = PBXGroup;
 			children = (
+				6136AB0625F10B840095467E /* SimulationRobot.cpp */,
 				616D0A1B24BDA4A40000DBA3 /* Integrator.cpp */,
 				616EB5EB24BD9E1A00FC1370 /* Robot.h */,
 				616EB5E924BD9E1600FC1370 /* Robot.cpp */,
@@ -205,8 +205,6 @@
 				61E0F7B124645FBE00457095 /* OrientationController.h */,
 				61E0F7842452D89800457095 /* Simulation.cpp */,
 				61E0F7872452D9CD00457095 /* Simulation.h */,
-				616D0A1424BDA2020000DBA3 /* SimulationRobot.cpp */,
-				616D0A1524BDA2020000DBA3 /* SimulationRobot.h */,
 				61E0F7882452DD6800457095 /* walk_cpg.cpp */,
 				61E0F7892452DD6800457095 /* walk_cpg.h */,
 				61E0F78B2452DD8700457095 /* walk_tripod.cpp */,
@@ -334,9 +332,9 @@
 				616EB5EA24BD9E1600FC1370 /* Robot.cpp in Sources */,
 				61E0F77D2452D7A100457095 /* PIDController.cpp in Sources */,
 				61E0F7802452D7A100457095 /* common.cpp in Sources */,
+				6136AB0725F10B840095467E /* SimulationRobot.cpp in Sources */,
 				616EB5EE24BD9E2100FC1370 /* walk_tripod.h in Sources */,
 				616EB5ED24BD9E1E00FC1370 /* walk_tripod.cpp in Sources */,
-				616D0A1624BDA2020000DBA3 /* SimulationRobot.cpp in Sources */,
 				61E0F75A2452D2F100457095 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
