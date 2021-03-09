@@ -25,7 +25,7 @@ TripodWalk::TripodWalk(std::vector<std::string> jointNames):SimulationRobot(join
 
 TripodWalk::~TripodWalk()
 {
-    saveToFile("/Users/Melanie/Downloads/");
+    saveToFile("");
 }
 
 void TripodWalk::setInitPosition()
@@ -201,7 +201,7 @@ void TripodWalk::goDown(const double speed, const double targetDistance, const b
 
 void TripodWalk::saveToFile(const std::string& path)
 {
-    std::string fileName = "test_noise.csv";
+    std::string fileName = "test.csv";
     std::ofstream out(path + fileName, std::ios::out);
     if(!out.is_open())
         std::cerr << "Could not open file: " << path + fileName << std::endl;

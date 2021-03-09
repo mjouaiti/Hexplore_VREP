@@ -24,24 +24,22 @@
 void key_callback2(GLFWwindow* window, int key, int scancode, int action, int mode);
 std::vector<std::string> rhex_names = {"rhex_joint1", "rhex_joint2", "rhex_joint3", "rhex_joint4", "rhex_joint5", "rhex_joint6"};
 
-#ifdef _LINUX
 std::string path = "../../Grapher/src/";
-#else
-std::string path = "/Users/Melanie/Documents/Studies/LORIA/Code/Grapher/src/";
-#endif
 
 GLint WIDTH = 1024, HEIGHT = 768;
 
 std::vector<double> coords;
 Coord c(0,0,0);
 
-
 TripodWalk simulation(rhex_names);
 
 int main()
 {
+    float t = 0.0, dt = 0.01;
     Grapher* grapher;
-    grapher = new Grapher(WIDTH, HEIGHT, TMAX, 0.01, 4);
+//    Create visualiser with given dimensions, timesteps...
+    grapher = new Grapher(WIDTH, HEIGHT, TMAX, dt, 4);
+    Shader shader = Shader((path + "shaders/shader.vs").c_str(), (path + "shaders/shader.frag").c_str());
     
     glfwSetKeyCallback(grapher->_Window, key_callback2);
     grapher->setBoundariesX(-23., 23.);
@@ -50,15 +48,14 @@ int main()
     grapher->setDisplayedVariables(0, { std::pair<unsigned int, unsigned int>(0, 1),
                                         std::pair<unsigned int, unsigned int>(2, 3),
                                         std::pair<unsigned int, unsigned int>(4, 5)});
-    Shader shader = Shader((path + "shaders/shader.vs").c_str(), (path + "shaders/shader.frag").c_str());
-
-    float t = 0.0, dt = 0.01;
 
     while (t < TMAX && !grapher->shouldClose())
     {
+//        Simulation step. Everything regarding the robott happens here
         std::vector<double> tmp = simulation.step();
         
         coords ={c.x, c.y, tmp[0], tmp[1], tmp[2], tmp[3]};
+//        Uodate visualisation
         grapher->step(coords, shader);
         t += dt;
     }

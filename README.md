@@ -37,3 +37,6 @@ RUNNING
     ./Graphical
 
 Before running ./Graphical, open the VREP file rhex.ttt in the "rhex_models" folder.
+
+
+You can control the robot trajectory using the keyboard arrows.
